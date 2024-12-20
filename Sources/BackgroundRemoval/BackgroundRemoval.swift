@@ -25,7 +25,7 @@ public struct BackgroundRemoval {
     ///@param filterSharpness tha sharpness of filter if needed (recommeneded)
     ///@param maskOnly pass true if you want the mask onl, not the output image
     
-    public func removeBackground(image: UIImage, maskOnly: Bool = false) throws -> UIImage {
+    public func removeBackground(image: UIImage, maskOnly: Bool = false) async throws -> UIImage {
         let w = image.size.width
         let h = image.size.height
         
